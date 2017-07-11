@@ -1,4 +1,6 @@
 export const SET_RECIPIES = 'SET_RECIPIES';
+export const FAVORITE_RECIPE = 'FAVORITE_RECIPE';
+
 
 export function setRecipes(items){
    return {
@@ -6,3 +8,11 @@ export function setRecipes(items){
       items,
    };
 }
+
+export function favoriteRecipe(recipe){
+   return {
+      type: FAVORITE_RECIPE,
+      recipe,
+   };
+}
+

@@ -5164,9 +5164,9 @@ react-live@^1.5.2:
     prop-types "^15.5.8"
     unescape "^0.2.0"
 
-react-materialize@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/react-materialize/-/react-materialize-1.0.3.tgz#9a697fdbfbd2793c20dbb474e038e05c12dc7844"
+react-materialize@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/react-materialize/-/react-materialize-1.0.4.tgz#e7ffe3e9f67023eb7d81499bd028ad0c11163774"
   dependencies:
     classnames "^2.2.5"
     react "^15.4.2"

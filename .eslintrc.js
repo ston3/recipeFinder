@@ -16,6 +16,8 @@ module.exports = {
         "import/no-unresolved":0,
         "import/extensions":0,
         "react/prop-types":0,
-        "jsx-a11y/href-no-hash":0
+        "jsx-a11y/href-no-hash":0,
+        "no-param-reassign":0,
+        "react/jsx-first-prop-new-line":0
     }
 };
