@@ -6,19 +6,17 @@ class RecipeList extends Component {
    render(){
       console.log('this.props', this.props);
       return (
-			<div>
+         <div>
             {
-					this.props.recipes.map((recipe, index) => {
-						return(
-							<RecipeItem 
-								key={index} 
-								recipe={recipe}
-							>
-							</RecipeItem>
-						);
-					})
-				}
-			</div>  
+               this.props.recipes.map((recipe, index) => (
+                  <RecipeItem
+                     key={index}
+                     recipe={recipe}
+                     favoriteButton
+                  />
+               ))
+            }
+         </div>
       );
    }
 }
@@ -26,4 +24,4 @@ function mapStateToProps(state){
    return state;
 }
 
-export default connect(mapStateToProps ,null)(RecipeList);
+export default connect(mapStateToProps, null)(RecipeList);

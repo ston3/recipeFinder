@@ -23,23 +23,24 @@ class RecipeItem extends Component{
             <Collection>
                <CollectionItem >
                   {
-                     this.state.favorited ?
-                        <Button
-                           floating
-                           className="red"
-                           waves="light"
-                           icon="start"
-                           onClick={() => this.setState({ favorited: false })}
-                        />
+                     this.props.favoriteButton ?
+                        this.state.favorited ?
+                           <Button
+                              floating
+                              className="red"
+                              waves="light"
+                              icon="start"
+                           />
+                           :
+                           <Button
+                              floating
+                              className="primary"
+                              waves="light"
+                              icon="star"
+                              onClick={() => this.favorite(recipe)}
+                           />
                         :
-                        <Button
-                           floating
-                           className="primary"
-                           waves="light"
-                           icon="star"
-                           onClick={() => this.favorite(recipe)}
-                        />
-
+                        <div />
                   }
                   <Badge>
                      <img src={recipe.thumbnail} />
@@ -55,5 +56,8 @@ class RecipeItem extends Component{
       );
    }
 }
+function mapStateToProps(state){
+   return state;
+}
 
-export default connect(null, { favoriteRecipe })(RecipeItem);
+export default connect(mapStateToProps, { favoriteRecipe })(RecipeItem);
