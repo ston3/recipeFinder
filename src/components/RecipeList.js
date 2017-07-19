@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import RecipeItem from './RecipeItem';
 
@@ -7,6 +8,7 @@ class RecipeList extends Component {
       console.log('this.props', this.props);
       return (
          <div>
+
             {
                this.props.recipes.map((recipe, index) => (
                   <RecipeItem

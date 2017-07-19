@@ -24,7 +24,7 @@ class SearchRecipies extends Component {
 
    render(){
       return (
-         <Row>
+         <Row className="section">
             <Input
                placeholder="garlic, chicken"
                onChange={event => this.setState({ ingredients: event.target.value })}

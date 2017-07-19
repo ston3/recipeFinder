@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import RecipeItem from './RecipeItem';
+import Header from './Header';
 
 class FavoriteRecipeList extends Component{
    render(){
       return (
          <div>
+            <Header />
             <h4>Favorite Recipe</h4>
             {
                this.props.favoriteRecipes.map((recipe, index) => (
